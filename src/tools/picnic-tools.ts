@@ -268,7 +268,8 @@ toolRegistry.register({
   },
 })
 
-// Clear cart tool
+// Clear cart tool — BLOCKED (mutating): registration disabled in this hardened build
+/*
 toolRegistry.register({
   name: "picnic_clear_cart",
   description: "Clear all items from the shopping cart",
@@ -283,6 +284,7 @@ toolRegistry.register({
     }
   },
 })
+*/
 
 // Get delivery slots tool
 toolRegistry.register({
@@ -404,7 +406,8 @@ toolRegistry.register({
   },
 })
 
-// Cancel delivery tool
+// Cancel delivery tool — BLOCKED (mutating): registration disabled in this hardened build
+/*
 toolRegistry.register({
   name: "picnic_cancel_delivery",
   description: "Cancel a delivery order",
@@ -420,6 +423,7 @@ toolRegistry.register({
     }
   },
 })
+*/
 
 // Rate delivery tool
 const rateDeliveryInputSchema = z.object({
